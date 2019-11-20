@@ -6,8 +6,7 @@ weight: 10
 
 {{% capture overview %}}
 La panoramica dell'amministrazione del cluster è per chiunque crei o gestisca un cluster Kubernetes.
-Presuppone una certa dimestichezza con i core Kubernetes [concetti](/docs/concepts/).
-{{% /capture %}}
+Presuppone una certa dimestichezza con i [concetti](/docs/concepts/) core Kubernetes.{{% /capture %}}
 
 {{% capture body %}}
 ## Progettare un cluster
@@ -18,7 +17,7 @@ Prima di scegliere una guida, ecco alcune considerazioni:
 
  - Vuoi provare Kubernetes sul tuo computer o vuoi creare un cluster multi-nodo ad alta disponibilità? Scegli la distro che più si adatti alle tue esigenze.
  - **Se si sta progettando per l'alta disponibilità**, impara a configurare [cluster in più zone](/docs/concepts/cluster-administration/federation/).
- - Utilizzerai **un cluster di Kubernetes ospitato**, come [Motore di Google Kubernetes](https://cloud.google.com/kubernetes-engine/) o **che ospita il tuo cluster**?
+ - Utilizzerai **un cluster di Kubernetes gestito**, come [Google Kubernetes Engine](https://cloud.google.com/kubernetes-engine/) o **sarai tu a gestire il tuo cluster**?
  - Il tuo cluster sarà **on-premises** o **nel cloud (IaaS)**? Kubernetes non supporta direttamente i cluster ibridi. Invece, puoi impostare più cluster.
  - **Se stai configurando Kubernetes on-premises**, considera quale [modello di rete](/docs/concepts/cluster-administration/networking/) si adatti meglio.
  - Eseguirai Kubernetes su **hardware "bare metal"** o su **macchine virtuali (VM)**?
@@ -26,9 +25,9 @@ Prima di scegliere una guida, ecco alcune considerazioni:
    In quest'ultimo caso, scegli una distribuzione sviluppata attivamente. Alcune distribuzioni utilizzano solo versioni binarie, ma offrono una maggiore varietà di scelte
  - Familiarizzare con i [componenti](/docs/admin/cluster-components/) necessari per eseguire un cluster.
 
-Nota: non tutte le distro vengono mantenute attivamente. Scegli le distro che sono state testate con una versione recente di Kubernetes.
+Nota: non tutte le distro vengono mantenute attivamente. Scegli una distro che sia state testata con una versione recente di Kubernetes.
 
-## Managing a cluster
+## Gestire un cluster
 
 * [Gestione di un cluster](/docs/tasks/administration-cluster/cluster-management/) descrive diversi argomenti relativi al ciclo di vita di un cluster: creazione di un nuovo cluster, aggiornamento dei nodi master e worker del cluster, esecuzione della manutenzione del nodo (ad esempio kernel aggiornamenti) e aggiornamento della versione dell'API di Kubernetes di un cluster in esecuzione.
 
@@ -40,7 +39,7 @@ Nota: non tutte le distro vengono mantenute attivamente. Scegli le distro che so
 
 * [Certificati](/docs/concepts/cluster-administration/certificates/) descrive i passaggi per generare certificati utilizzando diverse catene di strumenti.
 
-* [Kubernetes Container Environment](/docs/concepts/containers/container-environment-variables/) descrive l'ambiente per i contenitori gestiti Kubelet su un nodo Kubernetes.
+* [Kubernetes Container Environment](/docs/concepts/containers/container-environment-variables/) descrive l'ambiente per i container gestiti Kubelet su un nodo Kubernetes.
 
 * [Controllo dell'accesso all'API di Kubernetes](/docs/reference/access-authn-authz/controlling-access/) descrive come impostare le autorizzazioni per gli utenti e gli account di servizio.
 
